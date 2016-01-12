@@ -10,9 +10,9 @@ with open(sys.argv[2], 'w') as outfile:
         if len(line) > 0:
             if line[0] == '>':
                 if linenum == 0:
-                    outfile.write(line + 'n')
+                    outfile.write(line + '\n')
                     linenum += 1
                 else:
-                    outfile.write('n' + line + 'n')
+                    outfile.write('\n' + line + '\n')
             else:
                 outfile.write(line)
